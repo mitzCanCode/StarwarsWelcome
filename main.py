@@ -200,5 +200,12 @@ dark_side = [f"{WHITE}{at_at}", f"{RED}{darth_vader}", f"{RED}{darth_vader2}", f
 char_decision = choice(dark_side)
 quote = choice(dark_side_quotes)
 
-print(f"{RED}{char_decision}")
-print(f"{quote}{RESET}")
+print(char_decision)
+
+for i in range(len(quote) + 4):
+    print("-", end="")
+print()
+print(f"| {quote} |")
+for i in range(len(quote) + 4):
+    print("-", end="")
+print(RESET)
